@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Rozszerzenia Bootstrapa</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<script src="js/jquery-1.12.4.js"></script>
+		<script src="js/bootstrap.js"></script>
+	<!--ROZWIJANE MENU-->
+	<div class="dropdown">
+		<a data-toggle="dropdown" data-target="#"> <!--KAŻDE ROZWIJANE MENU SKŁADA SIĘ Z ELEMENTÓW A ORAZ UL. W TYM PRZYPADKU ELEMENT UL JEST DOMYŚLNIE UKRYTY, ZAŚ ELEMENT A SŁUŻY DO WYŚWIETLANIA ROZWIJANEGO MENU. ATRYBUT DATA-TOGGLE INFORMUJE BOOTSTRAPA O WYŚWIETELNIU EFEKTU ROZWIJANIA ZA KAŻDYM KLIKNIĘCIEM ODSYŁACZA. ATRYBUT DATA-TARGET POZWALA UNIKNĄĆ PRZEKIEROWANIA NA INNĄ STRONĘ. ELEMENT A POWINIEN PONADTO ZAWIERAĆ JAKIŚ TEKST, NP MENU ORAZ SYMBOL STRZAŁKI W DÓŁ, KTÓRY MOŻNA UZYSKAĆ PRZY UŻYCIU KLASY CARET-->
+		Menu<span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+			<li><a href="#">Odsyłacz 1.</a></li>
+			<li><a href="#">Odsyłacz 2.</a></li>
+			<li><a href="#">Odsyłacz 3.</a></li>
+			<li><a href="#">Odsyłacz 4.</a></li>
+		</ul>
+	</div>
+	</body>
+</html>
